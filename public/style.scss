@@ -1,0 +1,81 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px;
+  border: 1px solid;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-top: 1px solid gray;
+  &_author {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &_text {
+    font-size: 14px;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  &_date_autor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#button {
+    text-align: center;
+}
+#button button{
+    text-transform: uppercase;
+    font-size: 13px;
+}
+span.current {
+  font-weight: bold;
+}
+#pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pagination_num {
+  padding: 2px;
+}
+#form {
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  input, textarea, div {
+    color: black;
+    margin: 5px;
+    border-radius: 5px;
+  }
+  input[type="text"] {
+    max-width: 300px;
+    background: #d3d3d3;
+  }
+  input#text, textarea {
+    min-height: 200px;
+    width: 100%;
+    background: #d3d3d3;
+    resize: none;
+  }
+  div {
+    overflow: auto;
+  }
+  input[type="submit"] {
+    width: 120px;
+    padding: 10px;
+    text-transform: uppercase;
+    background: #517fff;
+    border: 0;
+    float: right;
+  }
+}
+
